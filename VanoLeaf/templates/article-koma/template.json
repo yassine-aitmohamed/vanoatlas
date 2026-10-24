@@ -1,0 +1,15 @@
+{
+ "id": "article-koma",
+ "name": "Article — KOMA-Script",
+ "category": "Articles & preprints",
+ "description": "Modern European typography (scrartcl): sans-serif headings, nicer page layout, theorem environments.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 14,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

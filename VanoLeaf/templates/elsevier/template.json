@@ -1,0 +1,17 @@
+{
+ "id": "elsevier",
+ "name": "Elsevier journal (elsarticle)",
+ "category": "Journals",
+ "description": "Elsevier's official class for submissions to Elsevier journals (Journal of Algebra, Advances in Mathematics, …): front matter, highlights-ready, elsarticle-num bibliography.",
+ "compiler": "pdflatex",
+ "needs": [
+  "elsarticle.cls"
+ ],
+ "order": 20,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

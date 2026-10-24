@@ -1,0 +1,17 @@
+{
+ "id": "article-fr",
+ "name": "Article en français",
+ "category": "Articles & preprints",
+ "description": "Article in French: babel français, French theorem names (Théorème, Lemme…), French quotation marks.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 13,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

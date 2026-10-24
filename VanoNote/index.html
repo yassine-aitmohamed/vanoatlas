@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#1f4e37">
+<title>VanoNote</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand"><div class="brandmark">V</div><div><b>VanoNote</b><span>Notes · Handwriting · Classes</span></div></div>
+    <button class="topbtn" id="libToggle" title="Library">☰</button>
+    <div id="noteTitleWrap"><input id="noteTitle" autocomplete="off" placeholder="Note title"></div>
+    <div class="topspacer"></div>
+    <span id="saveState">Saved</span>
+    <button class="topbtn" id="presentBtn" title="Presentation mode (F)">◉ Present</button>
+    <button class="topbtn" id="shareBtn" title="Share with students">⇧ Share</button>
+    <button class="topbtn" id="themeBtn" title="Change theme">☀ Autumn</button>
+  </header>
+
+  <div id="body">
+    <aside id="library">
+      <div class="libHead">
+        <div class="searchWrap"><span>⌕</span><input id="search" placeholder="Search notes, text, transcript…"></div>
+        <button class="round" id="newNote" title="New note">＋</button>
+      </div>
+      <div class="smartFolders">
+        <button class="navitem on" data-filter="all"><span>▦</span> All Notes <i id="allCount">0</i></button>
+        <button class="navitem" data-filter="favorite"><span>★</span> Favorites <i id="favCount">0</i></button>
+        <button class="navitem" data-filter="recent"><span>◷</span> Recent</button>
+        <button class="navitem" data-filter="trash"><span>⌫</span> Trash <i id="trashCount">0</i></button>
+      </div>
+      <div class="sectionTitle"><span>Folders</span><button id="newFolder">＋</button></div>
+      <div id="folderList"></div>
+      <div class="sectionTitle"><span>Tools</span></div>
+      <div class="toolLinks">
+        <button id="templatesBtn">▤ Templates</button>
+        <button id="flashcardsBtn">◫ Flashcards & Quiz</button>
+        <button id="backupBtn">↥ Backup</button>
+        <button id="settingsBtn">⚙ Settings</button>
+      </div>
+      <div class="xpHint"><b>XP‑Pen</b><span id="penStatus">Waiting for pen</span><small>P/H/E/L · Z/⇧Z · [ ] · F</small></div>
+    </aside>
+
+    <section id="noteListPane">
+      <div class="listHeader"><b id="listTitle">All Notes</b><div class="viewSwitch"><button id="sortBtn" title="Sort">⇅</button><button id="gridBtn" title="Grid/list view">▦</button></div></div>
+      <div id="noteList"></div>
+    </section>
+
+    <main id="workspace">
+      <div id="emptyState">
+        <div class="emptyLogo">V</div>
+        <h1>VanoNote</h1>
+        <p>Your handwritten notebook and classroom whiteboard.</p>
+        <div class="emptyActions">
+          <button class="primary" onclick="App.newNote()">＋ New note</button>
+          <button onclick="document.getElementById('importFile').click()">↧ Import PDF / document</button>
+        </div>
+      </div>
+
+      <div id="editor" class="hidden">
+        <div id="toolstrip">
+          <div class="toolgroup">
+            <button class="tool on" data-tool="pen" title="Pen (P)">✎<span>Pen</span></button>
+            <button class="tool" data-tool="calligraphy" title="Calligraphy (C)">𝒞<span>Callig.</span></button>
+            <button class="tool" data-tool="highlighter" title="Highlighter (H)">▰<span>Highlighter</span></button>
+            <button class="tool" data-tool="eraser" title="Eraser (E)">⌫<span>Eraser</span></button>
+            <button class="tool" data-tool="select" title="Lasso / select (V)">⬚<span>Lasso</span></button>
+            <button class="tool" data-tool="text" title="Text (T)">T<span>Text</span></button>
+            <button class="tool" data-tool="line" title="Line">╱<span>Line</span></button>
+            <button class="tool" data-tool="rect" title="Rectangle">□<span>Rect.</span></button>
+            <button class="tool" data-tool="ellipse" title="Ellipse">○<span>Ellipse</span></button>
+            <button class="tool" data-tool="arrow" title="Arrow">→<span>Arrow</span></button>
+            <button class="tool" data-tool="laser" title="Laser (L)">●<span>Laser</span></button>
+          </div>
+          <div class="divider"></div>
+          <div class="colors" id="colors"></div>
+          <input id="customColor" type="color" value="#17211b" title="Custom color">
+          <div class="sizeControl"><button id="sizeDown">−</button><input id="size" type="range" min="1" max="40" step="1" value="4"><button id="sizeUp">＋</button><span id="sizeLabel">4</span></div>
+          <div class="divider"></div>
+          <button class="iconbtn" id="undoBtn" title="Undo (Z)">↶</button>
+          <button class="iconbtn" id="redoBtn" title="Redo (Shift+Z)">↷</button>
+          <button class="iconbtn" id="paperBtn" title="Paper / template">▦</button>
+          <button class="iconbtn" id="addPageBtn" title="Add page">＋▯</button>
+          <button class="iconbtn" id="importBtn" title="Import PDF, document or image">↧</button>
+          <button class="iconbtn" id="audioBtn" title="Record audio">●</button>
+          <button class="iconbtn" id="transcribeBtn" title="Live transcription">≋</button>
+          <button class="iconbtn" id="moreBtn" title="More">•••</button>
+        </div>
+
+        <div id="classbar" class="hidden">
+          <b>CLASS MODE</b><span id="classInfo">Teacher whiteboard</span>
+          <button id="prevPageClass">←</button><span id="classPage">1 / 1</span><button id="nextPageClass">→</button>
+          <span class="grow"></span>
+          <button id="classShare">Student link</button>
+          <button id="exitPresent">Exit (Esc)</button>
+        </div>
+
+        <div id="editorBody">
+          <aside id="pageStrip"><div id="pageThumbs"></div><button id="pagePlus">＋ Page</button></aside>
+          <div id="canvasViewport">
+            <div id="pageStage">
+              <canvas id="inkCanvas"></canvas>
+              <canvas id="overlayCanvas"></canvas>
+              <div id="textInput" contenteditable="true" class="hidden"></div>
+            </div>
+          </div>
+          <aside id="inspector">
+            <div class="inspTabs"><button class="on" data-tab="audio">Audio</button><button data-tab="text">Texte</button><button data-tab="study">Study</button></div>
+            <div class="inspPane" id="audioPane">
+              <div class="recordCard"><div class="recordDot"></div><div><b id="recordStatus">No recording</b><span id="recordTimer">00:00</span></div><button id="recordToggle">Record</button></div>
+              <div id="audioList"></div>
+              <h4>Transcription</h4>
+              <div id="transcript" contenteditable="true" data-placeholder="Live transcription will appear here…"></div>
+            </div>
+            <div class="inspPane hidden" id="textPane">
+              <h4>Typed notes</h4><textarea id="plainText" placeholder="Add text associated with this page or class…"></textarea>
+              <div class="formatRow"><button data-md="**">B</button><button data-md="_">I</button><button id="mathBtn">∑ LaTeX</button></div>
+              <h4>Attachments</h4><div id="attachmentList"></div>
+            </div>
+            <div class="inspPane hidden" id="studyPane">
+              <button class="wide primary" id="summaryBtn">✦ Local smart summary</button>
+              <button class="wide" id="genCardsBtn">◫ Generate flashcards</button>
+              <button class="wide" id="quizBtn">? Start quiz</button>
+              <div id="studyOutput"></div>
+            </div>
+          </aside>
+        </div>
+        <div id="statusbar"><span id="pageStatus">Page 1</span><span id="zoomStatus">100%</span><span id="pointerStatus">Mouse</span><span class="grow"></span><button id="penOnlyBtn" class="on">✎ Pen only</button><button id="zoomOutBtn" title="Zoom out">−</button><button id="fitWidthBtn" title="Fit page to width">↔ Fit width</button><button id="zoomInBtn" title="Zoom in">＋</button><button id="splitBtn">◫ Split note</button></div>
+      </div>
+    </main>
+  </div>
+</div>
+<input type="file" id="importFile" hidden accept="application/pdf,image/*,.doc,.docx,.ppt,.pptx,.odt,.odp,.vnote" multiple>
+<div id="modalOverlay" class="hidden"><div id="modal"></div></div>
+<div id="toast"></div>
+<script src="/assets/app.js"></script>
+</body>
+</html>

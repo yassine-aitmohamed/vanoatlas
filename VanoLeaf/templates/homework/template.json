@@ -1,0 +1,14 @@
+{
+ "id": "homework",
+ "name": "Homework / problem set",
+ "category": "Teaching & homework",
+ "description": "Problem set with numbered problems and solutions, header with course and due date.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 80,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

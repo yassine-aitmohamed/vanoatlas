@@ -1,0 +1,37 @@
+\documentclass[11pt]{amsbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\makeindex
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+\frontmatter
+\title{{{TITLE}}}
+\author{{{AUTHOR}}}
+\maketitle
+\tableofcontents
+\chapter*{Preface}
+\mainmatter
+\part{Foundations}
+\chapter{First chapter}
+\section{First section}
+A \emph{definition}\index{definition}.
+\backmatter
+\bibliographystyle{amsalpha}
+\bibliography{references}
+\printindex
+\end{document}

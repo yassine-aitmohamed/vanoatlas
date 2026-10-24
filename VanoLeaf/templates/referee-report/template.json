@@ -1,0 +1,14 @@
+{
+ "id": "referee-report",
+ "name": "Referee report",
+ "category": "CV & letters",
+ "description": "Report for a journal: summary, assessment, major and minor comments, recommendation.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 74,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

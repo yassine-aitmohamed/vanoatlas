@@ -1,0 +1,17 @@
+{
+ "id": "revtex-aps",
+ "name": "APS Physical Review (REVTeX)",
+ "category": "Journals",
+ "description": "REVTeX 4.2 for Physical Review and other APS / AIP journals (mathematical physics).",
+ "compiler": "pdflatex",
+ "needs": [
+  "revtex4-2.cls"
+ ],
+ "order": 23,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

@@ -1,0 +1,46 @@
+\documentclass[11pt]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+\title{{{TITLE}}}
+\author{{{AUTHOR}}}
+\address{Department of Mathematics, University, City, Country}
+\email{name@university.edu}
+\subjclass[2020]{Primary 53D17; Secondary 58H05}
+\keywords{keyword one, keyword two}
+\date{\today}
+
+\begin{abstract}
+Write the abstract here.
+\end{abstract}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+\begin{theorem}\label{thm:main}
+Statement.
+\end{theorem}
+
+\section{Background}
+
+\bibliographystyle{amsalpha}
+\bibliography{references}
+\end{document}

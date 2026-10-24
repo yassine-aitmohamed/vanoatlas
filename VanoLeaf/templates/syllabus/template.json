@@ -1,0 +1,14 @@
+{
+ "id": "syllabus",
+ "name": "Course syllabus",
+ "category": "Teaching & homework",
+ "description": "Course outline: description, schedule table, evaluation, policies.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 83,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

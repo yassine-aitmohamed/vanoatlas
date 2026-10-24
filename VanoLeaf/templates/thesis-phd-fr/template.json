@@ -1,0 +1,22 @@
+{
+ "id": "thesis-phd-fr",
+ "name": "Thèse de doctorat (français)",
+ "category": "Theses",
+ "description": "Thèse complète en français : page de titre, résumé et abstract, remerciements, table des matières, chapitres séparés, annexe, bibliographie.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 31,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "chapters/appendix.tex",
+  "chapters/conclusion.tex",
+  "chapters/introduction.tex",
+  "chapters/preliminaries.tex",
+  "chapters/results.tex",
+  "main.tex",
+  "references.bib"
+ ]
+}

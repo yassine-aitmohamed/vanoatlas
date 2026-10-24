@@ -1,0 +1,16 @@
+{
+ "id": "poster-tikz",
+ "name": "Poster — tikzposter (A0)",
+ "category": "Posters",
+ "description": "Conference poster in A0 with tikzposter: title block, coloured blocks in columns.",
+ "compiler": "pdflatex",
+ "needs": [
+  "tikzposter.cls"
+ ],
+ "order": 60,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

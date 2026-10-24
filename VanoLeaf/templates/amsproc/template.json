@@ -1,0 +1,15 @@
+{
+ "id": "amsproc",
+ "name": "AMS proceedings (amsproc)",
+ "category": "Journals",
+ "description": "AMS proceedings and contemporary-mathematics style (the class of your own template).",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 26,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

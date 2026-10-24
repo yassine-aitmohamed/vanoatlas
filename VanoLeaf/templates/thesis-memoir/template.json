@@ -1,0 +1,15 @@
+{
+ "id": "thesis-memoir",
+ "name": "Thesis — elegant (memoir)",
+ "category": "Theses",
+ "description": "Book-like thesis with the memoir class: elegant chapter style, epigraphs, good page layout.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 34,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

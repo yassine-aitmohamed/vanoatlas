@@ -1,0 +1,17 @@
+{
+ "id": "cv-moderncv",
+ "name": "CV — moderncv",
+ "category": "CV & letters",
+ "description": "Classic modern CV (moderncv, 'classic' style): education, positions, publications, talks, skills.",
+ "compiler": "pdflatex",
+ "needs": [
+  "moderncv.cls",
+  "fontawesome5.sty"
+ ],
+ "order": 70,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

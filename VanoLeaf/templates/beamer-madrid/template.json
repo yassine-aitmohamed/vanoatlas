@@ -1,0 +1,14 @@
+{
+ "id": "beamer-madrid",
+ "name": "Slides — Madrid (classic)",
+ "category": "Presentations",
+ "description": "Classic beamer theme with a header and a footer showing author, title and page.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 51,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

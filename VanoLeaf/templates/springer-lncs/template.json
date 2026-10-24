@@ -1,0 +1,17 @@
+{
+ "id": "springer-lncs",
+ "name": "Springer LNCS (conference proceedings)",
+ "category": "Journals",
+ "description": "Springer Lecture Notes in Computer Science format (llncs), also used by many math/CS proceedings.",
+ "compiler": "pdflatex",
+ "needs": [
+  "llncs.cls"
+ ],
+ "order": 25,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

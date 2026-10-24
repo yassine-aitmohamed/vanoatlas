@@ -1,0 +1,16 @@
+{
+ "id": "corrige",
+ "name": "Corrigé / correction sheet",
+ "category": "Teaching & homework",
+ "description": "Corrigé pour auxiliaire d'enseignement : barème par question, commentaires fréquents, en français.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 82,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "tufte-handout",
+ "name": "Tufte handout",
+ "category": "Books & lecture notes",
+ "description": "Edward Tufte's style: wide margin with side notes and margin figures. Good for handouts and seminar notes.",
+ "compiler": "pdflatex",
+ "needs": [
+  "tufte-handout.cls"
+ ],
+ "order": 42,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

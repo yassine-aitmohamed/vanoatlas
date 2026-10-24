@@ -1,0 +1,16 @@
+{
+ "id": "lecture-notes",
+ "name": "Lecture notes (coloured theorem boxes)",
+ "category": "Books & lecture notes",
+ "description": "Course notes with coloured boxes for definitions, theorems and examples (tcolorbox), exercises and a table of contents.",
+ "compiler": "pdflatex",
+ "needs": [
+  "tcolorbox.sty"
+ ],
+ "order": 41,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

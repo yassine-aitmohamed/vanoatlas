@@ -1,0 +1,17 @@
+{
+ "id": "tikz-cd-diagrams",
+ "name": "Commutative diagrams (standalone)",
+ "category": "Reports & other",
+ "description": "A standalone file to draw tikz-cd commutative diagrams and TikZ figures, cropped to the picture for inclusion in papers.",
+ "compiler": "pdflatex",
+ "needs": [
+  "standalone.cls",
+  "tikz-cd.sty"
+ ],
+ "order": 92,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "cv-academic",
+ "name": "CV — academic (simple)",
+ "category": "CV & letters",
+ "description": "Plain academic CV without special classes: easy to edit, prints well, publication list with numbering.",
+ "compiler": "pdflatex",
+ "needs": [
+  "titlesec.sty",
+  "enumitem.sty"
+ ],
+ "order": 71,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

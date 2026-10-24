@@ -1,0 +1,50 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,graphicx,booktabs}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{{{TITLE}}}
+\author{{{AUTHOR}}}
+\date{\today}
+
+\begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+    Abstract.
+    \end{abstract}
+    \vspace{1em}
+  \end{@twocolumnfalse}
+]
+\section{Introduction}
+Text.
+\begin{table}[t]
+\centering
+\begin{tabular}{lcc}\toprule
+Case & $n$ & Result \\\midrule
+A & 1 & yes \\
+B & 2 & no \\\bottomrule
+\end{tabular}
+\caption{A table.}
+\end{table}
+\section{Method}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,14 @@
+{
+ "id": "minimal",
+ "name": "Blank document",
+ "category": "Reports & other",
+ "description": "The smallest working LaTeX file: start from scratch.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 99,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

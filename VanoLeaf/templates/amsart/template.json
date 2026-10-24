@@ -1,0 +1,15 @@
+{
+ "id": "amsart",
+ "name": "AMS article (amsart)",
+ "category": "Articles & preprints",
+ "description": "The American Mathematical Society article class: title block with address and email, MSC classes, keywords, theorem styles.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 11,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

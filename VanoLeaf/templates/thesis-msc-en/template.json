@@ -1,0 +1,22 @@
+{
+ "id": "thesis-msc-en",
+ "name": "Master's thesis (English)",
+ "category": "Theses",
+ "description": "Master's thesis (M.Sc.) in English, same structure as the PhD thesis.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 33,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "chapters/appendix.tex",
+  "chapters/conclusion.tex",
+  "chapters/introduction.tex",
+  "chapters/preliminaries.tex",
+  "chapters/results.tex",
+  "main.tex",
+  "references.bib"
+ ]
+}

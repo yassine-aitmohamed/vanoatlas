@@ -1,0 +1,17 @@
+{
+ "id": "arxiv-preprint",
+ "name": "arXiv preprint",
+ "category": "Articles & preprints",
+ "description": "Clean one-column preprint: several authors with affiliations, abstract, keywords, numbered theorems, hyperlinks. Ready for arXiv.",
+ "compiler": "pdflatex",
+ "needs": [
+  "authblk.sty"
+ ],
+ "order": 12,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

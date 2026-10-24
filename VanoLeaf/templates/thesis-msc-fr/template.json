@@ -1,0 +1,22 @@
+{
+ "id": "thesis-msc-fr",
+ "name": "Mémoire de maîtrise (français)",
+ "category": "Theses",
+ "description": "Mémoire de maîtrise (M.Sc.) en français, même structure que la thèse.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 32,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "chapters/appendix.tex",
+  "chapters/conclusion.tex",
+  "chapters/introduction.tex",
+  "chapters/preliminaries.tex",
+  "chapters/results.tex",
+  "main.tex",
+  "references.bib"
+ ]
+}

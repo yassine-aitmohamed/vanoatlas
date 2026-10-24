@@ -1,0 +1,15 @@
+{
+ "id": "book-ams",
+ "name": "Book / monograph (amsbook)",
+ "category": "Books & lecture notes",
+ "description": "AMS book class for a monograph: parts, chapters, theorem numbering by chapter, index.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 40,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

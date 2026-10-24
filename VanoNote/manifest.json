@@ -1,0 +1,9 @@
+{
+  "name":"VanoNote",
+  "short_name":"VanoNote",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#f8f4eb",
+  "theme_color":"#1f4e37",
+  "icons":[{"src":"/assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

@@ -1,0 +1,14 @@
+{
+ "id": "beamer-math-talk",
+ "name": "Slides — minimal math talk",
+ "category": "Presentations",
+ "description": "Sober slides for a seminar talk: white, serif, no navigation symbols, frame numbers only.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 52,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

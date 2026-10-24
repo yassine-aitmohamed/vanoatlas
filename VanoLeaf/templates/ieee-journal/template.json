@@ -1,0 +1,17 @@
+{
+ "id": "ieee-journal",
+ "name": "IEEE journal (IEEEtran)",
+ "category": "Journals",
+ "description": "IEEE Transactions two-column format with IEEE keywords and the IEEEtran bibliography style.",
+ "compiler": "pdflatex",
+ "needs": [
+  "IEEEtran.cls"
+ ],
+ "order": 21,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

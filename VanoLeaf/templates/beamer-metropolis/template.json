@@ -1,0 +1,16 @@
+{
+ "id": "beamer-metropolis",
+ "name": "Slides — Metropolis (modern)",
+ "category": "Presentations",
+ "description": "Modern flat beamer theme (Metropolis): clean, minimalist, progress bar.",
+ "compiler": "pdflatex",
+ "needs": [
+  "beamerthememetropolis.sty"
+ ],
+ "order": 50,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

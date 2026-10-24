@@ -1,0 +1,17 @@
+{
+ "id": "acm",
+ "name": "ACM article (acmart)",
+ "category": "Journals",
+ "description": "ACM's official class for ACM journals and conferences (computer science).",
+ "compiler": "pdflatex",
+ "needs": [
+  "acmart.cls"
+ ],
+ "order": 24,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

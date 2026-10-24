@@ -1,0 +1,16 @@
+{
+ "id": "exam",
+ "name": "Exam (exam class)",
+ "category": "Teaching & homework",
+ "description": "Exam with points, grading table, space for answers and a solutions switch.",
+ "compiler": "pdflatex",
+ "needs": [
+  "exam.cls"
+ ],
+ "order": 81,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

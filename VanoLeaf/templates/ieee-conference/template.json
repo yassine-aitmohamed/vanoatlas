@@ -1,0 +1,17 @@
+{
+ "id": "ieee-conference",
+ "name": "IEEE conference",
+ "category": "Journals",
+ "description": "IEEE conference paper (two columns, author blocks).",
+ "compiler": "pdflatex",
+ "needs": [
+  "IEEEtran.cls"
+ ],
+ "order": 22,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

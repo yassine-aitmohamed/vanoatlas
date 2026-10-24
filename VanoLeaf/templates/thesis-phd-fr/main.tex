@@ -1,0 +1,70 @@
+\documentclass[12pt,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[english,french]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}\onehalfspacing
+\usepackage{graphicx,booktabs}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Théorème}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{corollary}[theorem]{Corollaire}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Définition}
+\newtheorem{example}[theorem]{Exemple}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remarque}
+
+\begin{document}
+\pagenumbering{roman}
+\begin{titlepage}
+  \centering
+  {\large UNIVERSITÉ\par}
+  {\large Faculté des sciences — Département de mathématiques\par}
+  \vspace{3cm}
+  {\LARGE\bfseries {{TITLE}}\par}
+  \vspace{2cm}
+  {\Large {{AUTHOR}}\par}
+  \vspace{1.5cm}
+  Thèse présentée pour l'obtention du grade de Philosophiæ Doctor (Ph.D.)\par
+  \vfill
+  {\large Directeur ou directrice : Prénom Nom\par}
+  \vspace{1cm}
+  {\large \today\par}
+\end{titlepage}
+
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+Résumé en français.
+
+\textbf{Mots-clés :} \dots
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\begin{otherlanguage}{english}Abstract in English.\end{otherlanguage}
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+\tableofcontents
+\listoffigures
+
+\cleardoublepage
+\pagenumbering{arabic}
+\include{chapters/introduction}
+\include{chapters/preliminaries}
+\include{chapters/results}
+\include{chapters/conclusion}
+
+\appendix
+\include{chapters/appendix}
+
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}

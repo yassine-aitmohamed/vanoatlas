@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+VanoLeaf/projects/
+VanoLeaf/logs/
+VanoLeaf/vanoleaf_config.json
+VanoNote/data/
+VanoNote/attachments/
+VanoNote/audio/
+VanoNote/exports/
+VanoNote/backups/
+VanoNote/logs/
+VanoLib/data/
+VanoLib/pdfs/
+VanoLib/site-data/
+*.vlfmt.*

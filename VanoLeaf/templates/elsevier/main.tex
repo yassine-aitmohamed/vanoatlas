@@ -1,0 +1,32 @@
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newdefinition{definition}{Definition}
+\newproof{pf}{Proof}
+\journal{Journal Name}
+
+\begin{document}
+\begin{frontmatter}
+\title{{{TITLE}}}
+\author[a]{{{AUTHOR}}}
+\ead{name@university.edu}
+\affiliation[a]{organization={Department of Mathematics, University},
+            city={City}, country={Country}}
+\begin{abstract}
+Abstract.
+\end{abstract}
+\begin{keyword}
+keyword one \sep keyword two
+\MSC[2020] 00A00
+\end{keyword}
+\end{frontmatter}
+
+\section{Introduction}
+\begin{theorem}
+Statement.
+\end{theorem}
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+\end{document}

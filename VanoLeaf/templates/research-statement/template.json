@@ -1,0 +1,15 @@
+{
+ "id": "research-statement",
+ "name": "Research statement",
+ "category": "CV & letters",
+ "description": "Research statement for applications: overview, past work, current projects, future directions.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 75,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

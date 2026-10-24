@@ -1,0 +1,16 @@
+{
+ "id": "meeting-notes",
+ "name": "Meeting notes (with your supervisor)",
+ "category": "Reports & other",
+ "description": "Notes of a research meeting: date, attendees, discussion, decisions, action items.",
+ "compiler": "pdflatex",
+ "needs": [
+  "enumitem.sty"
+ ],
+ "order": 91,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

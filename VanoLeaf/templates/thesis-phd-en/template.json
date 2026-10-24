@@ -1,0 +1,22 @@
+{
+ "id": "thesis-phd-en",
+ "name": "PhD thesis (English)",
+ "category": "Theses",
+ "description": "Complete thesis: title page, abstract and résumé, acknowledgements, table of contents, chapters in separate files, appendix, bibliography.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 30,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "chapters/appendix.tex",
+  "chapters/conclusion.tex",
+  "chapters/introduction.tex",
+  "chapters/preliminaries.tex",
+  "chapters/results.tex",
+  "main.tex",
+  "references.bib"
+ ]
+}

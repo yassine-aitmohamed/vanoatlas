@@ -1,0 +1,15 @@
+{
+ "id": "report",
+ "name": "Report (technical / internship)",
+ "category": "Reports & other",
+ "description": "Report class with title page, abstract, chapters and appendix: internship, technical or progress report.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 90,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

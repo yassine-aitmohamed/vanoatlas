@@ -1,0 +1,15 @@
+{
+ "id": "article-classic",
+ "name": "Article — classic",
+ "category": "Articles & preprints",
+ "description": "Standard LaTeX article with amsmath, theorem environments, cleveref and a BibTeX bibliography.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 10,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

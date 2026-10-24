@@ -1,0 +1,15 @@
+{
+ "id": "thesis-koma",
+ "name": "Thesis — KOMA-Script (scrreprt)",
+ "category": "Theses",
+ "description": "Thesis with KOMA-Script report: modern headings, A4, chapter files.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 35,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

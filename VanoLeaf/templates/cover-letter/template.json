@@ -1,0 +1,14 @@
+{
+ "id": "cover-letter",
+ "name": "Cover letter",
+ "category": "CV & letters",
+ "description": "Application letter (postdoc, job, grant): sender block, date, recipient, signature.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 72,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

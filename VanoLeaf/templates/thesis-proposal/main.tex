@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{{{TITLE}}\\[4pt]\large Research proposal}
+\author{{{AUTHOR}}}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+One-paragraph summary of the project.
+\end{abstract}
+\section{Context and motivation}
+\section{State of the art}
+\section{Objectives and research questions}
+\begin{enumerate}
+  \item First objective.
+  \item Second objective.
+\end{enumerate}
+\section{Methodology}
+\section{Preliminary results}
+\section{Timeline}
+\begin{tabular}{ll}\toprule
+Period & Milestone\\\midrule
+Year 1 & \dots\\
+Year 2 & \dots\\\bottomrule
+\end{tabular}
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,14 @@
+{
+ "id": "research-notebook",
+ "name": "Research notebook / working notes",
+ "category": "Books & lecture notes",
+ "description": "Dated entries for ongoing research: ideas, computations, questions, to-do, with quick theorem environments.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 44,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

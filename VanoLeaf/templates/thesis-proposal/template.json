@@ -1,0 +1,15 @@
+{
+ "id": "thesis-proposal",
+ "name": "Thesis proposal / qualifying exam",
+ "category": "Theses",
+ "description": "Research proposal for a qualifying exam (examen prédoctoral): objectives, state of the art, methodology, timeline, references.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 36,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

@@ -1,0 +1,71 @@
+\documentclass[12pt,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[french,english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}\onehalfspacing
+\usepackage{graphicx,booktabs}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+\pagenumbering{roman}
+\begin{titlepage}
+  \centering
+  {\large UNIVERSITY\par}
+  {\large Faculty of Science — Department of Mathematics\par}
+  \vspace{3cm}
+  {\LARGE\bfseries {{TITLE}}\par}
+  \vspace{2cm}
+  {\Large {{AUTHOR}}\par}
+  \vspace{1.5cm}
+  A thesis submitted in partial fulfilment of the requirements for the degree of Master of Science\par
+  \vfill
+  {\large Supervisor: First Last\par}
+  \vspace{1cm}
+  {\large \today\par}
+\end{titlepage}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+Abstract in English.
+
+\textbf{Keywords:} \dots
+
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\begin{otherlanguage}{french}Résumé en français.\end{otherlanguage}
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\tableofcontents
+\listoffigures
+
+\cleardoublepage
+\pagenumbering{arabic}
+\include{chapters/introduction}
+\include{chapters/preliminaries}
+\include{chapters/results}
+\include{chapters/conclusion}
+
+\appendix
+\include{chapters/appendix}
+
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}

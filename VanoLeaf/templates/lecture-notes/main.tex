@@ -1,0 +1,36 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\tcbuselibrary{theorems}
+\newtcbtheorem[number within=chapter]{theorem}{Theorem}{colback=blue!4,colframe=blue!55!black,fonttitle=\bfseries}{thm}
+\newtcbtheorem[use counter from=theorem]{definition}{Definition}{colback=green!4,colframe=green!45!black,fonttitle=\bfseries}{def}
+\newtcbtheorem[use counter from=theorem]{example}{Example}{colback=orange!4,colframe=orange!70!black,fonttitle=\bfseries}{ex}
+\newtheorem*{exercise}{Exercise}
+\title{{{TITLE}}\\[4pt]\large Lecture notes}
+\author{{{AUTHOR}}}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{First lecture}
+\begin{definition}{Group}{group}
+A group is a set $G$ with an associative operation, a unit and inverses.
+\end{definition}
+\begin{theorem}{Lagrange}{lagrange}
+If $H\le G$ and $G$ is finite, then $|H|$ divides $|G|$.
+\end{theorem}
+\begin{proof}
+The cosets of $H$ partition $G$ and all have $|H|$ elements.
+\end{proof}
+\begin{example}{}{}
+$\mathbb Z/n\mathbb Z$.
+\end{example}
+\begin{exercise}
+Prove that \dots
+\end{exercise}
+\end{document}

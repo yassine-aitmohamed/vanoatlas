@@ -1,0 +1,16 @@
+{
+ "id": "letter-fr",
+ "name": "Lettre formelle (français)",
+ "category": "CV & letters",
+ "description": "Lettre en français : expéditeur, destinataire, lieu et date, objet, formule de politesse.",
+ "compiler": "pdflatex",
+ "needs": [
+  "french.ldf"
+ ],
+ "order": 73,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

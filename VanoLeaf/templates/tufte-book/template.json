@@ -1,0 +1,17 @@
+{
+ "id": "tufte-book",
+ "name": "Tufte book",
+ "category": "Books & lecture notes",
+ "description": "Book in Tufte's style with side notes; for notes, books and long expositions.",
+ "compiler": "pdflatex",
+ "needs": [
+  "tufte-book.cls"
+ ],
+ "order": 43,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

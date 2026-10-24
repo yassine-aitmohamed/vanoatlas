@@ -1,0 +1,16 @@
+{
+ "id": "poster-beamer",
+ "name": "Poster — beamerposter",
+ "category": "Posters",
+ "description": "Poster built with beamer and beamerposter (A0, three columns).",
+ "compiler": "pdflatex",
+ "needs": [
+  "beamerposter.sty"
+ ],
+ "order": 61,
+ "bibtool": "",
+ "tag": "",
+ "files": [
+  "main.tex"
+ ]
+}

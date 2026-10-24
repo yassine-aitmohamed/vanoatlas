@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{{{TITLE}}}
+\author{{{AUTHOR}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Write the abstract here.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+State the main result early.
+
+\begin{theorem}\label{thm:main}
+Let $X$ be \dots. Then \dots.
+\end{theorem}
+
+By \cref{thm:main} \dots, as in \cite{example2024}.
+
+\section{Preliminaries}
+
+\section{Proof of the main theorem}
+\begin{proof}[Proof of \cref{thm:main}]
+\dots
+\end{proof}
+
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}

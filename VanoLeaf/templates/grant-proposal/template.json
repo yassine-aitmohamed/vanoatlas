@@ -1,0 +1,15 @@
+{
+ "id": "grant-proposal",
+ "name": "Grant / scholarship proposal",
+ "category": "CV & letters",
+ "description": "Generic research grant or scholarship proposal: summary, objectives, methodology, impact, training, budget.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 76,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}

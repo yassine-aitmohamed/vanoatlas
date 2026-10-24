@@ -1,0 +1,15 @@
+{
+ "id": "article-twocolumn",
+ "name": "Article — two columns",
+ "category": "Articles & preprints",
+ "description": "Two-column article with a one-column title and abstract, figures and tables that span both columns.",
+ "compiler": "pdflatex",
+ "needs": [],
+ "order": 15,
+ "bibtool": "bibtex",
+ "tag": "",
+ "files": [
+  "main.tex",
+  "references.bib"
+ ]
+}
