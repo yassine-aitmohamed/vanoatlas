@@ -3,6 +3,7 @@
 <h1 align="center">VanoAtlas</h1>
 <p align="center"><b>L'espace de travail du chercheur, sur votre propre ordinateur.</b><br>
 Projets, tâches, réunions, routine quotidienne, notes, articles et LaTeX dans une seule application privée.</p>
+<p align="center"><a href="https://github.com/yassine-aitmohamed/vanoatlas/actions/workflows/checks.yml"><img src="https://github.com/yassine-aitmohamed/vanoatlas/actions/workflows/checks.yml/badge.svg" alt="Checks"></a> <a href="https://github.com/yassine-aitmohamed/vanoatlas/releases/latest"><img src="https://img.shields.io/github/v/release/yassine-aitmohamed/vanoatlas?color=4c6ef5" alt="Release"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"></a> <img src="https://img.shields.io/badge/macOS%20%7C%20Linux%20%7C%20Windows-supported-555" alt="Platforms"></p>
 <p align="center"><a href="README.md">English version</a></p>
 
 ---
@@ -61,6 +62,13 @@ Vous préférez un téléchargement ? Prenez le zip de votre système sur la pag
 ### Thèmes
 
 <img src="docs/screenshots/themes-grid.jpg" alt="Les 15 thèmes de VanoAtlas" width="900">
+
+## Auteur
+
+VanoAtlas est écrit et maintenu par **Yassine Ait Mohamed**, doctorant en mathématiques à l'Université de Sherbrooke. C'est d'abord un outil pour ma propre recherche, partagé dans l'espoir qu'il serve à d'autres.
+
+- Site : [yassine-aitmohamed.github.io](https://yassine-aitmohamed.github.io)
+- Bugs et idées : [ouvrir une issue](https://github.com/yassine-aitmohamed/vanoatlas/issues)
 
 ## Licence
 

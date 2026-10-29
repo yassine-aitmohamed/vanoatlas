@@ -3,6 +3,7 @@
 <h1 align="center">VanoAtlas</h1>
 <p align="center"><b>The research workspace that lives on your computer.</b><br>
 Projects, tasks, meetings, daily routine, notes, papers and LaTeX in one private app.</p>
+<p align="center"><a href="https://github.com/yassine-aitmohamed/vanoatlas/actions/workflows/checks.yml"><img src="https://github.com/yassine-aitmohamed/vanoatlas/actions/workflows/checks.yml/badge.svg" alt="Checks"></a> <a href="https://github.com/yassine-aitmohamed/vanoatlas/releases/latest"><img src="https://img.shields.io/github/v/release/yassine-aitmohamed/vanoatlas?color=4c6ef5" alt="Release"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"></a> <img src="https://img.shields.io/badge/macOS%20%7C%20Linux%20%7C%20Windows-supported-555" alt="Platforms"></p>
 <p align="center"><a href="README.fr.md">Version française</a></p>
 
 ---
@@ -100,6 +101,13 @@ VanoLib/     arXiv library and PDF reader
 tools/       sample data
 docs/        screenshots
 ```
+
+## Author
+
+VanoAtlas is written and maintained by **Yassine Ait Mohamed**, PhD student in mathematics at the Université de Sherbrooke. It started as a tool for my own research and is shared in the hope that it is useful to others.
+
+- Website: [yassine-aitmohamed.github.io](https://yassine-aitmohamed.github.io)
+- Bug reports and ideas: [open an issue](https://github.com/yassine-aitmohamed/vanoatlas/issues)
 
 ## License
 
